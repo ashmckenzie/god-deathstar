@@ -27,5 +27,5 @@ end
 
 run "sudo gem install god" unless god_installed?
 run "sudo mkdir -p /etc/god/conf.d" unless god_conf_d_exists?
-run "sudo ln -nfs ./config/god.conf /etc/god/god.conf" unless god_file_symlinked?
-run "sudo ln -nfs ./config/god.init /etc/init/god.conf" unless god_init_symlinked?
+run "sudo ln -nfs /home/deploy/apps/god/config/god.conf /etc/god/god.conf" unless god_file_symlinked?
+run "sudo ln -nfs /home/deploy/apps/god/config/god.init /etc/init/god.conf" unless god_init_symlinked?
