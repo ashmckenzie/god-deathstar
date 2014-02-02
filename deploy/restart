@@ -1,4 +1,5 @@
 #!/bin/sh
 
-# echo "Restaring god"
-# sudo service god restart
+echo "Restaring god"
+sudo initctl stop god
+sudo initctl start god
