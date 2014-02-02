@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# echo "Restaring god"
+# sudo service god restart
