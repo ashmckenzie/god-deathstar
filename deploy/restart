@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Restaring god"
+echo "Stopping and starting god"
 sudo initctl stop god
 sudo initctl start god

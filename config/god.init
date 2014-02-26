@@ -1,9 +1,8 @@
-# Upstart configuation
 description "god daemon"
 
-start on runlevel [2]
+start on runlevel [23]
 stop on runlevel [016]
 
-exec /usr/local/bin/god -c /etc/god/god.conf -D --log-level debug
+exec /usr/local/bin/god -c /etc/god/god.conf -D --log-level debug --log /var/log/god.log
 
 respawn
